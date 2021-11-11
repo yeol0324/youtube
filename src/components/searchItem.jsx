@@ -2,14 +2,14 @@ import React, { Component } from "react";
 
 class SearchItem extends Component {
     render() {
-        // const { title, publish } = this.props.habit;
-
         return (
-            <div>
-                <span>Thum</span>
-                {/* <span>{title}</span>
-                <span>{publish}</span> */}
-            </div>
+            <>
+                <div>
+                    <img src={this.props.video.snippet.thumbnails.medium.url} alt="" />
+                    <h3>{this.props.video.snippet.title}</h3>
+                    <span>{this.props.video.snippet.channelTitle}</span>
+                </div>
+            </>
         );
     }
 }
